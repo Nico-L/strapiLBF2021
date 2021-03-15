@@ -1,0 +1,41 @@
+{
+  "routes": [{
+    "method": "POST",
+    "path": "/token/decrypt",
+    "handler": "Auth.tokenDecrypt",
+    "config": {
+      "policies": [],
+      "prefix": false
+    }
+  },
+  {
+      "method": "PUT",
+      "path": "/users/:id",
+      "handler": "User.update",
+      "config": {
+        "policies": ["plugins::users-permissions.ownUser"],
+        "prefix": "",
+        "description": "Update an existing user",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User",
+          "actionType": "update"
+        }
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/users/:id",
+      "handler": "User.destroy",
+      "config": {
+        "policies": ["plugins::users-permissions.ownUser"],
+        "prefix": "",
+        "description": "Delete an existing user",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User",
+          "actionType": "destroy"
+        }
+      }
+   }]
+}

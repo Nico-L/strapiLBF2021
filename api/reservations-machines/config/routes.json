@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reservations-machines",
+      "handler": "reservations-machines.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reservations-machines/count",
+      "handler": "reservations-machines.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reservations-machines/:id",
+      "handler": "reservations-machines.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reservations-machines",
+      "handler": "reservations-machines.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reservations-machines/:id",
+      "handler": "reservations-machines.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reservations-machines/:id",
+      "handler": "reservations-machines.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

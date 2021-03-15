@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "illustrations",
+  "info": {
+    "name": "illustrations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tag": {
+      "model": "tags-illustrations"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "article": {
+      "model": "articles"
+    },
+    "espace": {
+      "model": "espaces"
+    },
+    "sourceExterieur": {
+      "type": "boolean"
+    },
+    "urlExterieure": {
+      "type": "string"
+    }
+  }
+}

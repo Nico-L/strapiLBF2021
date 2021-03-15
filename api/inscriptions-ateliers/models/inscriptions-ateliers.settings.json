@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscriptions_ateliers",
+  "info": {
+    "name": "inscriptions_ateliers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "atelier": {
+      "model": "ateliers"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ateliers_inscrits",
+  "info": {
+    "name": "inscrits",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "prenom": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    }
+  }
+}

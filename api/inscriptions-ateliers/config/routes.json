@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inscriptions-ateliers",
+      "handler": "inscriptions-ateliers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inscriptions-ateliers/count",
+      "handler": "inscriptions-ateliers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inscriptions-ateliers/:id",
+      "handler": "inscriptions-ateliers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inscriptions-ateliers",
+      "handler": "inscriptions-ateliers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inscriptions-ateliers/:id",
+      "handler": "inscriptions-ateliers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inscriptions-ateliers/:id",
+      "handler": "inscriptions-ateliers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

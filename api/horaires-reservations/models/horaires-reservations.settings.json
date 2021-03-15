@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "horaires_reservations",
+  "info": {
+    "name": "horaires_reservations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "lundi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "mardi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "mercredi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "jeudi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "vendredi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "samedi": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    },
+    "dimanche": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.horaire"
+    }
+  }
+}

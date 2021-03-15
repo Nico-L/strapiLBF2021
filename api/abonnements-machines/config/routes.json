@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/abonnements-machines",
+      "handler": "abonnements-machines.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/abonnements-machines",
+      "handler": "abonnements-machines.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/abonnements-machines",
+      "handler": "abonnements-machines.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

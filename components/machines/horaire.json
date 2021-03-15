@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_machines_horaires",
+  "info": {
+    "name": "horaire",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "debut": {
+      "type": "time"
+    },
+    "fin": {
+      "type": "time"
+    }
+  }
+}

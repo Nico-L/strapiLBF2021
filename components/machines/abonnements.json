@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_machines_abonnements",
+  "info": {
+    "name": "abonnements",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "duree": {
+      "type": "string"
+    },
+    "tarif": {
+      "type": "string"
+    }
+  }
+}

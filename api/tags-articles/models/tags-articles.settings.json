@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags_articles",
+  "info": {
+    "name": "tags_articles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tag": {
+      "type": "string"
+    }
+  }
+}

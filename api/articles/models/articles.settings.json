@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "articles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "chapeau": {
+      "type": "richtext"
+    },
+    "data": {
+      "type": "json"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "espace": {
+      "model": "espaces"
+    },
+    "tags": {
+      "collection": "tags-articles"
+    },
+    "banniere": {
+      "model": "illustrations"
+    },
+    "coteAdmin": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

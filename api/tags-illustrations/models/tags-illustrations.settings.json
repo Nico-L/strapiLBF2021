@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags_illustrations",
+  "info": {
+    "name": "tags_illustrations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "tag": {
+      "type": "string"
+    }
+  }
+}

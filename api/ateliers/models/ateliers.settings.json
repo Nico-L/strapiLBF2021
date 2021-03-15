@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ateliers",
+  "info": {
+    "name": "ateliers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "debut": {
+      "type": "time"
+    },
+    "fin": {
+      "type": "time"
+    },
+    "nbParticipants": {
+      "type": "integer"
+    },
+    "espace": {
+      "model": "espaces"
+    },
+    "lieu": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "surInscription": {
+      "type": "boolean"
+    },
+    "encadrant": {
+      "type": "email"
+    },
+    "illustration": {
+      "model": "illustrations"
+    },
+    "inscriptions_ateliers": {
+      "collection": "inscriptions-ateliers"
+    },
+    "tarifs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ateliers.tarifs"
+    }
+  }
+}

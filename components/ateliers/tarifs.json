@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ateliers_tarifs",
+  "info": {
+    "name": "tarifs",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "tarif": {
+      "type": "float"
+    },
+    "description": {
+      "type": "string"
+    },
+    "qf": {
+      "type": "boolean"
+    }
+  }
+}

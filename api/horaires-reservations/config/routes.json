@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/horaires-reservations",
+      "handler": "horaires-reservations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/horaires-reservations",
+      "handler": "horaires-reservations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/horaires-reservations",
+      "handler": "horaires-reservations.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

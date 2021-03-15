@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "abonnements_machines",
+  "info": {
+    "name": "abonnements_machines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "abonnements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.abonnements"
+    }
+  }
+}

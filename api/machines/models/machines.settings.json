@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "name": "machines",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "modele": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "resume": {
+      "type": "text"
+    },
+    "surAbonnement": {
+      "type": "boolean"
+    },
+    "nomRaccourci": {
+      "type": "string"
+    },
+    "tarifHoraire": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "string"
+    },
+    "illustration": {
+      "model": "illustrations"
+    }
+  }
+}

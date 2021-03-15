@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "espaces",
+  "info": {
+    "name": "espaces",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "espace": {
+      "type": "string"
+    }
+  }
+}
